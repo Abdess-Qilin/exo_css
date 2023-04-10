@@ -1,0 +1,132 @@
+@use "./vars.scss";
+
+body {
+    font-family: Roboto Condensed;
+    width: 900px;
+    height: 100vh;
+    box-sizing: border-box;
+
+    .header {
+        background-image: url(../img/tlc-head-image-01.jpg);
+        background-size: 900px;
+        background-position: center;
+        background-size: cover;
+        height: 30%;
+        width: 100%;
+        
+
+        &__menu_link {
+         display: flex;
+         justify-content: center;
+         margin-left: auto;
+        
+         padding-top: 1rem;
+         
+         
+         .header__menu {
+            margin-left: 1em;
+            
+         }
+
+         .header__menu_link {
+          
+         }
+        }
+
+        &__logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 6rem;
+            
+            img {
+                width: 15%;
+            }
+        }
+
+        &__title{
+            display: flex;
+            flex-direction: column;
+          align-items: center;
+          color: white;
+          margin: 2rem;
+          padding-bottom: 3rem;
+         
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+        }
+        
+    }
+    
+    main {
+        .container {
+           border: 1px solid;
+           height: 30%;
+
+           .main__photo {
+            
+            
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+            aside {
+                position: relative;
+                font-size: 2rem;
+                text-align: center;
+                text-transform: uppercase;
+                position: relative;
+                bottom: 3em;
+                color: white;
+                letter-spacing: 1.5rem;
+            }
+           }
+
+           .mai__order {
+            
+            background-color: #ece3de;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5rem;
+            
+            h2 {
+                font-size: 2.5em;
+                margin-bottom: 1em;
+            }
+            h3 {
+                font-size: 2em;
+                margin-bottom: 0.5em;
+            }
+            p {
+                margin-bottom: 0.5em;
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+
+            input {
+                width: 40%;
+                font-size: 1em;
+                text-align: start;
+                padding: 1.2rem;
+            }
+           }
+        }
+    }
+    
+    .footer {
+        background-color:#373131;
+        width: 100%;
+        height: 30%;
+        
+
+        .footer__nav{
+           
+        }
+    }
+}
